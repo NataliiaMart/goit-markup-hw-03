@@ -7,7 +7,8 @@
     --color-light-slate: #8E8F99;
     --color-cornflower: #E7E9FC;
     --color-cloud: #F4F4FD;
-    --color-grey: #2E2F42
+    --color-grey: #2E2F42;
+    --color-wite: #FFFFFF;
 }
 
 body {
@@ -15,6 +16,75 @@ body {
     color: #434455;
 
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    font-family: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+.conteiner {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/*------HEADER------*/
+.header {
+    background-color: var(--color-wite);
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo-web {
+    margin-right: 76px;
+}
+
+.header-address-list {
+    display: flex;
+    align-items: center;
+}
+
+
 
 /*--------LOGO-------*/
 
@@ -48,9 +118,7 @@ body {
     list-style: none;
 }
 
-
-
-/*-----ADDERESS-----*/
+/*-----NAV-----*/
 
 .pages {
     font-style: normal;
@@ -61,13 +129,15 @@ body {
     color: var(--color-grey);
 }
 
-.pages:hover{
-color: #404BBF;
-}
-
-.pages:focus{
+.pages:hover {
     color: #404BBF;
 }
+
+.pages:focus {
+    color: #404BBF;
+}
+
+/*-----ADDERESS-----*/
 
 address {
     font-style: normal;
@@ -80,6 +150,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(---color-slate);
+    margin-right: 40px;
 }
 
 .header-item:hover,
@@ -87,22 +158,29 @@ address {
     color: #404BBF;
 }
 
-
 /*-------HERO--------*/
 
 .hero {
     background-color: #2E2F42;
+    display: flex;
+    align-items: center;
+    height: 600px;
+
 }
 
 .hero-title {
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
-    margin: 0 auto 48px;
+    margin-bottom: 48px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    padding: 188px, 472px, 292px, 472px;
+    min-width: 496px;
+
+
 }
 
 .hero-btn {
@@ -114,7 +192,14 @@ address {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background: #4D5AE5;
-    cursor: pointer
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: flex;
+    padding: 16px, 32px;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
 }
 
 .hero-btn :hover,
@@ -124,8 +209,20 @@ address {
 
 
 /*---------ADVANTAGE-----*/
+.advantage {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+.advantage-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 
 .advantage-title {
+    margin-bottom: 8px;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -142,13 +239,21 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-top: 8px;
+    width: 264px;
 }
 
 
 
 /*------OUR WORK-----*/
 
-.our-work {}
+
+.our-work-conteiner {
+    display: block;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
 
 .our-work-title {
     font-style: normal;
@@ -161,9 +266,27 @@ address {
     color: var(--color-navy-blue);
 }
 
-.our-work-item {}
+.our-work {
+    display: flex;
+    align-items: center;
+    padding-top: 72px;
+    gap: 24px;
+}
 
+.our-work-item {
+    display: flex;
+    align-items: center;
 
+}
+
+/*----TEAM----*/
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--color-cloud);
+}
 
 .team-title {
     font-style: normal;
@@ -174,6 +297,7 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+    padding-bottom: 72px;
 }
 
 .team-caption {
@@ -183,6 +307,8 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    padding-top: 32px;
+    text-align: center;
 }
 
 .team-text {
@@ -192,12 +318,21 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-top: 8px;
+    text-align: center;
+    padding-bottom: 152px;
 }
 
 /*------FOOTER--------*/
 
 .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 156px;
     background-color: var(--color-grey);
+    min-width: 264px;
+    justify-content: flex-start;
 }
 
 .footer-logo {
@@ -230,6 +365,7 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #F4F4FD;
+
 }
 
 .footer-text {
@@ -240,12 +376,42 @@ address {
     letter-spacing: 0.02em;
     color: #E7E9FC;
     background-color: var(--color-navy-blue);
+
 }
 
 
 
 /*------PORTFOLIO----*/
 /*-----FILTERS----*/
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.filters-conteiner {
+
+  
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+}
 
 .filters-btn {
     font-family: inherit;
@@ -259,8 +425,24 @@ address {
     color: #4D5AE5;
     cursor: pointer;
     background: #F4F4FD;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 
 }
+ 
+.filters-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 96px;
+    margin-bottom: 72px;
+    padding: 12px 24px 12px 24px;
+}
+
 
 .filters-item :hover {
     background: #404BBF;
@@ -274,13 +456,31 @@ address {
 
 /*-----PROJECT-----*/
 
-.progect {}
 
-.progect-item {}
+.progect-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
 
-.progect-img {}
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+.portfolio-item:is(:hover, :focus) .portfolio-item {
+    max-width: calc((100%-48px)/3);
+    height: 48px;
+}
 
 
+.card-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+}
 
 
 
