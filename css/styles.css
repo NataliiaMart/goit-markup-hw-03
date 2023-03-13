@@ -25,6 +25,7 @@ h4,
 h5,
 h6 {
     margin: 0;
+    margin: 0;
 }
 
 ul {
@@ -34,7 +35,13 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
+.section {
+    padding: 120px 0;
+}
+
 
 button {
     font-family: inherit;
@@ -56,6 +63,8 @@ address {
     background-color: var(--color-wite);
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid var(--color-cornflower);
+
 }
 
 .header-list {
@@ -160,6 +169,7 @@ address {
 
 /*-------HERO--------*/
 
+
 .hero {
     background-color: #2E2F42;
     display: flex;
@@ -209,6 +219,7 @@ address {
 
 
 /*---------ADVANTAGE-----*/
+
 .advantage {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -337,7 +348,9 @@ address {
     flex-direction: row;
     background-color: var(--color-grey);
     justify-content: flex-start;
+    padding-top: 100px;
     padding-left: 156px;
+    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -472,9 +485,7 @@ address {
     row-gap: 48px;
 
     margin-top: 72px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 120px;
+
 }
 
 .portfolio-item:is(:hover, :focus) .portfolio-item {
@@ -484,12 +495,15 @@ address {
 
 .card-text {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    padding-top: 32px;
-    padding-left: 16px;
-    padding-bottom: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px 16px;
     width: 360px;
+    border-top: 0;
+    border-right: 1px solid var(--color-cornflower);
+    border-left: 1px solid var(--color-cornflower);
+    border-bottom: 1px solid var(--color-cornflower);
 }
 
 
@@ -502,7 +516,7 @@ address {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .text {
@@ -513,4 +527,5 @@ address {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #434455;
+    width: 360px;
 }
