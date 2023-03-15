@@ -3,7 +3,7 @@
     --color-ocean: #404BBF;
     --color-navy-blue: #2E2F42;
     --color-green: #31D0AA;
-    ---color-slate: #434455;
+    --color-slate: #434455;
     --color-light-slate: #8E8F99;
     --color-cornflower: #E7E9FC;
     --color-cloud: #F4F4FD;
@@ -13,7 +13,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    color: var(---color-slate);
+    color: var(--color-slate);
 
 }
 
@@ -156,7 +156,7 @@ address {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(---color-slate);
+    color: var(--color-slate);
     margin-right: 40px;
 }
 
@@ -178,23 +178,20 @@ address {
 }
 
 .hero-title {
-    font-style: normal;
-    font-weight: 700;
+
     font-size: 56px;
     margin-bottom: 48px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
-    padding: 188px, 472px, 292px, 472px;
-    min-width: 496px;
+    color: var(--color-wite);
+    max-width: 496px;
 
 
 }
 
 .hero-btn {
     font-family: inherit;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -203,12 +200,12 @@ address {
     background: var(--color-iris);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    display: flex;
-    padding: 16px, 32px;
+    display: block;
+    padding: 16px 32px;
     border-radius: 4px;
     margin: 0 auto;
     text-align: center;
-    justify-content: center;
+    border: none;
 }
 
 .hero-btn :hover,
@@ -249,7 +246,7 @@ address {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(---color-slate)
+    color: var(--color-slate)
 }
 
 
@@ -295,11 +292,12 @@ address {
     align-items: center;
     gap: 24px;
     background-color: var(--color-cloud);
-    flex-basis: calc((100% - 108px) / 4);
+
 }
 
 .team-item {
     background: var(--color-wite);
+    flex-basis: calc((100% - 108px) / 4);
 }
 
 .team-card-text {
@@ -334,7 +332,7 @@ address {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(---color-slate);
+    color: var(--color-slate);
     text-align: center;
 }
 
@@ -526,6 +524,6 @@ address {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: var(---color-slate);
+    color: var(--color-slate);
     width: 360px;
 }
