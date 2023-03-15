@@ -208,9 +208,9 @@ address {
     border: none;
 }
 
-.hero-btn :hover,
-.hero-btn :focus {
-    color: var(--color-ocean)
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--color-ocean);
 }
 
 
