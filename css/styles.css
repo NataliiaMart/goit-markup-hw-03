@@ -151,13 +151,12 @@ address {
 }
 
 .header-item {
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-slate);
-    margin-right: 40px;
+    gap: 40px;
 }
 
 .header-item:hover,
@@ -254,14 +253,6 @@ address {
 /*------OUR WORK-----*/
 
 
-.our-work-conteiner {
-    display: block;
-    align-items: center;
-    padding-bottom: 120px;
-}
-
-
-
 .our-work-title {
     font-style: normal;
     font-weight: 700;
@@ -305,14 +296,13 @@ address {
 }
 
 .team-title {
-    font-style: normal;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-grey);
+    margin-bottom: 72px;
 
 }
 
@@ -407,9 +397,9 @@ address {
 
 }
 
-.filters-conteiner {}
+.portfolio-filters-conteiner {}
 
-.visually-hidden {
+.portfolio-visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -422,7 +412,7 @@ address {
     overflow: hidden;
 }
 
-.filters {
+.portfolio-filters {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -431,7 +421,7 @@ address {
     text-transform: none;
 }
 
-.filters-btn {
+.portfolio-filters-btn {
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
@@ -452,7 +442,7 @@ address {
 
 }
 
-.filters-item {
+.portfolio-filters-item {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -460,12 +450,12 @@ address {
 }
 
 
-.filters-item :hover {
+.portfolio-filters-item :hover {
     background: var(--color-ocean);
     color: #FFFFFF
 }
 
-.filters-item :focus {
+.portfolio-filters-item :focus {
     background:var(--color-ocean);
     color: #FFFFFF
 }
@@ -476,7 +466,7 @@ address {
     padding-bottom: 120px;
 }
 
-.progect-list {
+.portfolio-progect-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
